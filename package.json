@@ -18,6 +18,6 @@
       "pino-pretty": "^2.5.0",
       "@instana/collector": "^1.132.2",
       "prom-client": "latest",
-      "newrelic" : "latest"
+      "newrelic" :  "latest"
   }
 }
