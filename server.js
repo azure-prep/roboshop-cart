@@ -10,7 +10,7 @@ const Registry = promClient.Registry;
 const register = new Registry();
 const counter = new promClient.Counter({
     name: 'items_added',
-    help: 'running count of items added to cart',
+    help: 'running count  of items added to cart',
     registers: [register]
 });
 
