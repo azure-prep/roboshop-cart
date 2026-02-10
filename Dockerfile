@@ -1,8 +1,9 @@
 FROM node:22
 RUN  useradd roboshop
-RUN  mkdir /home/app ; chown roboshop /home/app
+RUN  mkdir /app ; chown -R roboshop:roboshop /app
 USER roboshop
-WORKDIR /home/app
+WORKDIR /app
 COPY    node_modules node_modules
 COPY package.json ./
 COPY server.js ./
+ENTRYPOINT    ["node", "server.js"]
