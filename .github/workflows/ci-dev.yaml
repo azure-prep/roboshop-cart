@@ -9,3 +9,5 @@ jobs:
     with:
       appType: 'Nodejs'
       appName: 'cart'
+    secrets:
+      TOKEN: ${{ secrets.TOKEN }}
